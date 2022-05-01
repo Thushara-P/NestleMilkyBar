@@ -1,0 +1,507 @@
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-tap-highlight-color: transparent;
+    box-sizing: border-box;   
+}
+@font-face {
+    font-family: BlogScript;
+    src: url(../Fonts/Sudtipos-BlogScript.otf);
+}
+@font-face {
+  font-family: SegoeUI;
+  src: url(../Fonts/SegoePro-Regular.ttf);
+}
+body,
+html {
+  height: 100vh;
+  background-color: #ffe633;  
+  overflow: hidden;
+}
+.btn{
+background-color:#23a7d2;
+color: #ffffff;
+border-radius: 1.25rem !important;
+padding: 0.38rem 3.8rem !important;
+border-color: #23a7d2 !important;
+margin-top: 15%;
+font-family: 'Nunito', sans-serif;
+font-weight: 500;
+}
+.btn:active{
+    background-color: #23a7d2;  
+}
+.btn:focus{
+    background-color: #23a7d2;
+}
+.bg-img{
+background-repeat: no-repeat;
+background-size: cover;
+position: fixed;
+bottom: 0;
+left:0;
+right:0;
+width: 100%;
+}
+.splash_img{
+width: 28%;
+position: absolute;
+top: 8%;
+}
+.main-wrapper{
+width: 100%;
+height: 83%;
+margin: auto;
+display: flex;
+flex-direction: column;
+align-items: center;
+padding-top: 26%;
+}
+.welcome_text {
+  color: #e0007e;
+  font-family: BlogScript;
+  text-shadow: 1.5px 0.2px #ffffff;
+  z-index: 1;
+}
+.WelcomeTextLogo{
+width: 78%;
+}
+.hidden{
+display: none;
+}
+.choose_avatar{
+  color: #e0007e;
+  font-family: BlogScript;
+  font-weight: 600;
+  font-size: 20px;
+  text-shadow: -1px 1px 0px #ffffff;
+}
+.btn-primary.disabled, .btn-primary:disabled{
+  background-color: #cccccc !important;
+  border:#cccccc !important;
+}
+.btn.disabled, .btn:disabled, fieldset:disabled .btn{
+  opacity: 1 !important;
+}
+.button-clicked {
+  border: 10px solid #23a7d2;
+  border-radius: 50%;
+}
+.avatar-text{
+    display: flex;
+    justify-content: space-around;
+}
+.top_title{
+  text-align: center;
+}
+.choose_promise{
+  color:#e0007e;
+  font-family: BlogScript;
+  text-shadow: -1px 1px 0px #ffffff;
+}
+.promise_section .main-wrapper{
+    padding-top: 16%;
+}
+/* /////// */
+.completed{
+  background-color:rgb(82, 190, 43, 0.7);
+  width: 86%;
+  border-radius: 12px;
+  top: 0;
+  left: 11px;
+  right:0;
+  bottom: 0;
+}
+/* /////// */
+.disclaimer_section .card-header{
+   background: #ffe633;
+   border-radius: 1rem 1rem 0 0 !important;
+}
+.disclaimer_section .card-body{
+    padding-bottom: 0 !important;
+    flex: 0 1 auto !important;
+}
+.disclaimer {
+    z-index: 100;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(57, 57, 57, 0.8);
+    height: 100vh;
+    width: 100%;
+}
+.disclaimer_section{
+   background: #fff;
+   box-shadow: 0 6px 10px rgba(0, 0, 0, .08), 0 0 6px rgba(0, 0, 0, .05);
+   transition: .3s transform cubic-bezier(.155, 1.105, .295, 1.12), .3s box-shadow, .3s -webkit-transform cubic-bezier(.155, 1.105, .295, 1.12);
+   border: 0;
+   border-radius: 1rem;
+}
+.disclaimer-text{
+    font-family: 'Nunito', sans-serif;
+    color: #646464;
+    line-height: 1.25;
+    text-align: left;
+    font-size: 16px;
+    font-weight: 500;
+}
+.disclaimer_title_text{
+   font-family: 'Nunito', sans-serif;
+   font-weight: 600;
+}
+.agree_text{
+   font-family: 'Nunito', sans-serif;
+   font-weight: 500;
+}
+.Agree_inputBox > label{
+   font-family: 'Quicksand', sans-serif;
+}
+.Agree_inputBox{
+    margin-left: 14%;
+}
+input[type='checkbox'] {
+   -webkit-appearance:none;
+   width:30px;
+   height:30px;
+   background:white;
+   border-radius:5px;
+   border:2px solid #555;
+}
+input[type='checkbox']:checked {
+   content: "✔";
+   
+   background: #52be2b;
+   border:none;
+}
+.form-check{
+ margin-left: 30px;
+}
+.form-check .form-check-label{
+ padding-left: 10px;
+ padding-top: 5px;
+}
+.Go_btn{ margin: 14px 0; }
+.congratulations_text{
+    font-family: Nunito;
+    font-weight: 600;
+    text-align: center;
+  }
+  .congratulations_section .card{
+      margin-top: 40% !important;
+      border-radius: 20px !important;
+  }
+  .successful_msg{
+    font-family: 'Quicksand', sans-serif;
+    text-align: center;
+    font-weight: 600;
+    color:#646464;
+  }
+  .Promise_text{
+    font-family: BlogScript;
+    font-size: 13px;
+  }
+  .ok_btn{
+    margin-top: 4%;
+  }
+  .congratulations_section .card-body{
+    padding-top: 5rem !important;
+  }
+  .congratulations_box{
+    position: relative;
+}
+.BigStar{
+   display: flex;
+   justify-content: space-around;
+   position: absolute;
+   top:-15%;
+   height: 30%;
+   width: 100%;
+}
+.Star_img{
+    position: relative;
+}
+.BlueStar_img{    
+  position: absolute;
+    left: 0;
+    top: -2px;
+}
+.BlueStar_img.active{
+  visibility: hidden;
+}
+.BigStar_text{
+    display: flex;
+    position:relative;
+    justify-content: space-around;
+    top:-6%;
+}
+.congratulations_section{
+    z-index: 100;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(57, 57, 57, 0.8);
+    height: 100vh;
+    width: 100vw;
+}
+.promise_completed_list .main-wrapper{
+    padding-top: 61px;
+}
+.participant_scan_card{
+  width: 33%;
+  padding-top: 2%;
+}
+.participant_scan_card.active{
+  visibility: hidden;
+}
+.promise_completed_card{
+  width: 37%;
+  padding-top: 3.6%;
+  margin-bottom: 1.8%;
+}
+.congrats_text{
+  font-family: BlogScript; 
+  text-align: center;
+  text-shadow: -1px 1px 0px #ffffff;
+}
+.participant_name .main-wrapper{
+    padding-top: 13%;
+}
+.input_box{
+    border-radius: 22px;
+    border-color: none;
+}
+.claimCertificate_text {
+    text-align: center;
+    padding-top: 30px;
+    font-family: BlogScript;
+    font-weight: 600;
+}
+.Congrats_title{
+  text-align: center;
+  font-family: BlogScript;
+}
+.Congrats_title > p{
+  color:#e0007e;
+  text-shadow: -1px 1px 0px #ffffff;
+}
+.Congrats_title .Congrats_name{
+  color:#23a7d2;
+}
+.collect_certificate{
+  font-family: Nunito;
+  margin-top: 27px;
+}
+.certificate_img{    
+  display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+}
+.certificate_download_img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 32px;
+}
+.CertificateDownloadImage{
+  position:relative;
+}
+#certificateImage{
+  margin-top: 27px; 
+}
+#participant_certificate_name{
+  position: absolute;
+  left: 42%;
+  top: 39%;
+  font-size: 10px;
+  font-weight: 600;
+}
+.collect_certificate {
+    font-family: Nunito;
+    margin-top: 27px;
+}
+.certificate_section .main-wrapper{
+    padding-top: 77px;
+}
+.download_text{
+  font-family: Nunito;
+  position: absolute;
+  top:15%;
+  text-align: center;
+}
+.download_share_text{  
+  top:15%;
+  font-size: 17px;
+  text-align: center;
+  padding: 0 15px;
+}
+.certificate_download_text{
+    text-align: center;
+    padding-top: 30px;
+    font-weight: 600;
+    color: #727171;  
+    font-size: 20px; }
+/* /////Tablet//// */
+@media (min-width: 768px) and (max-width: 1024px) and (-webkit-min-device-pixel-ratio: 1)
+{
+  .WelcomeTextLogo{
+    width: 560px;
+  }
+  .welcome_to_text{
+    font-size: 50px;
+  }
+  .welcome_text{
+    font-size: 52px;}
+  .btn{
+    font-size: 30px;
+    border-radius: 2.25rem !important;
+    width: 257px;
+    margin-top: 42%;
+  }
+  .choose_avatar{
+    font-size: 40px;
+  }
+  .female_avatar {
+    width: 200px;
+  }
+  .male_avatar{
+    width: 200px;
+  }
+  .avatar-text{
+    font-size: 33px;
+  }
+  .choose_promise{
+    font-size: 42px;
+  }
+  .promise_subtext{
+    font-size: 24px;
+  }
+  .promise_card {
+    width: 34%;
+}
+.promise_card_completed{
+  width: 43%;
+}
+.disclaimer-text{
+  font-size: 24px;
+}
+.form-check .form-check-label{
+  font-size: 20px;
+}
+.Go_btn{
+  margin-top: 0px;
+  font-size: 26px;
+  width: 220px;
+}
+.disclaimer_title_text{
+  font-size: 30px;
+} 
+.congratulations_text{
+  font-size: 35px;
+}
+.successful_msg{font-size: 27px;}
+.ok_btn{margin-top: 26px;}
+.Promise_text{
+  font-size: 19px;
+}
+.congrats_text{
+  font-size: 44px;
+}
+.promise_card_group {
+  width: 603px;
+}
+.promise_section .container{
+  width: 669px;
+}
+.Promise_completed_logo{
+  width: 460px;
+}
+.claimCertificate_text{
+  font-size: 28px;
+}
+.promise_btn{
+  margin-top: 15%;
+  z-index: 2;
+}
+.input_box {
+  padding-top: 16px !important;
+  padding-bottom: 16px !important;
+  border-radius: 55px;
+  font-size: 25px;
+  width: 509px;
+}
+.Congrats_title > p{
+  font-size: 43px;
+  margin-top: 49px;
+}
+.claim_btn{
+  margin-top: 84px !important;
+  z-index: 100;
+}
+.collect_certificate{
+  font-size: 25px;
+}
+#myCanvas{
+  width:418px !important
+}
+#certificateImage{
+  width: 413px;
+}
+.download_share_text{
+  font-size: 25px;
+}
+#myCanvas_download{
+  width: 500px;
+}
+.download_btn, .share_btn{
+  margin-top: 100px ;
+}
+.download_btn{
+  margin-right: 40px;
+}
+.exit_btn{
+  margin-top: 103px;
+}
+.download_successful_icon{
+  width: 215px;
+}    
+.certificate_download_text{
+  padding-top: 174px;
+  font-size: 34px;}
+.completed{
+  width: 87%;
+  left:16px;}
+}
+/* Surface Duo */
+@media (min-width: 540px) and (max-width: 720px){
+  .promise_card {
+    width: 175px;
+  }
+  .promise_card_completed{
+    width: 183px;
+  }
+  .completed{
+    width: 87%;
+  }
+  .claim_btn{
+    z-index: 100;
+  }
+  .download_btn{
+    margin-right: 20px;
+  }
+}
+@media (min-width: 912px) and (max-width: 1368px){
+  .promise_card_completed{ width: 50%;}
+  .completed{left:18px; width: 88%;}  
+  .promise_card_group {width: 663px;}
+  .promise_card {width: 41%;}
+}
+@media (min-width: 900px){
+  #wrapper{
+    display: none;
+  }
+}
+

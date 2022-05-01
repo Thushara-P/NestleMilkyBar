@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="./assets/css/style.css" />
+    <title>Milkybar 2021</title>    
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@500&family=Quicksand:wght@500&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    
+</head>
+<body>
+    <section id="wrapper" class="wrapper" style="overflow: hidden;">
+        <section class="Enter_MobileNo ">          
+            <div class="main-wrapper">
+              <img class="splash_img" src="./assets/img/splash_img.png"/>
+              <h1 class="welcome_text">HEY!</h1>
+              <h2 style="font-family: BlogScript; color:#23a7d2; z-index: 1;" class="welcome_to_text">WELCOME TO THE </h2>
+              <img src="./assets/img/WelcomeTextLogo.png" class="WelcomeTextLogo pe-5"/>
+              <button type="button" class="btn btn-primary btn-rounded enter_btn mt-5">Enter</button>             
+            </div>       
+            <div>
+              <img class="bg-img" src="./assets/img/MilkyBar_bg.svg"/>
+            </div>
+        </section>
+        <!-- End of Enter section ///////// -->  
+        <section class="Choose_Avatar_section hidden">
+          <div class="main-wrapper">
+            <span class="choose_avatar h5">Choose your avatar</span>
+            <div class="d-flex justify-content-between px-4 pt-5">
+              <div style="padding-right: 50px;">
+                <img onclick="male_btn_change()" class="male_avatar gender-avator img-fluid mb-3"
+                  src="./assets/img/Male_Avatar.svg" /> <br><span class="avatar-text"><b> Boy</b></span></div>
+              <div>
+                <img onclick="female_btn_change()" class="female_avatar gender-avator img-fluid mb-3"
+                  src="./assets/img/Female_Avatar.svg" /> <br> <span class="avatar-text"><b>Girl</b></span></div>
+            </div>
+            <div><button type="button" disabled id="next-button" class="btn btn-primary btn-rounded nxt-btn pt-5">Next</button></div>
+          </div>
+          <div>
+            <img class="bg-img" src="./assets/img/MilkyBar_bg.svg" />
+          </div>
+        </section> 
+        <!-- End of Avatar section ////////-->
+        <section class="promise_section hidden">
+          <div class="main-wrapper">
+              <div class="top_title pb-2">
+                <span class="choose_promise h5"><b>Tap on a promise to start</b></span><br>
+                <small class="promise_subtext"><b>Complete any 3 promises and get a certificate!</b></small>
+              </div>
+              <div class="container">
+                <div class="row d-flex justify-content-center promise_card_group g-2">
+                  <div id="PlayMore" class="promise_card col-5">
+                    <img src="./assets/img/PlayMore.png" style="width:90%;"/>
+                </div>
+                  <div id="ReadMore" class="promise_card col-5">
+                    <img src="./assets/img/ReadMore.png" style="width:90%;"/>
+                </div>
+                  <div id="SaveWater" class="promise_card col-5">
+                    <img src="./assets/img/SaveWater.png" style="width:90%;"/>
+                </div>
+                  <div id="WashHands" class="promise_card col-5">
+                    <img src="./assets/img/WashHands.png" style="width:90%;"/>
+                </div>
+                  <div id="PlantTrees" class="promise_card col-5">
+                    <img src="./assets/img/PlantTrees.png" style="width:90%;"/>
+                </div>
+                  <div class="promise_card col-5">
+                </div>                 
+                </div>
+              </div>
+          </div>
+          <div>
+            <img class="bg-img" src="./assets/img/MilkyBar_bg.svg" />
+          </div>
+        </section>
+        <!-- End of promise section ////////-->
+        <section class="disclaimer hidden">
+          <div class="container d-flex justify-content-center">
+            <form method="POST" style="padding-top: 128px;">
+              <div class="disclaimer_section card">
+                <div class="card-header text-center">
+                  <h4 class="mt-2 disclaimer_title_text">Disclaimer To Parents</h4>
+                </div>
+                <div class="card-body text-center ">
+                  <p class="disclaimer-text px-3">You agree to participate and provide your details for campaign purposes.
+                    We
+                    respect your privacy, you can also provide a nickname of your child/ward for certificate purposes</p>
+                </div>
+                <div class="form-check">
+                  <input for="checkbox" class="form-check-input" id="agree" type="checkbox" />
+                  <label class="form-check-label">Agree</label>
+                </div>
+                <div class="text-center"><button type="button" class="btn Go_btn btn-rounded">Let's Go</button></div>
+              </div>
+            </form>
+          </div>
+        </section>
+        <!-- End of Disclaimer section ////////-->
+        <section class="congratulations_section hidden">
+          <div class="container d-flex justify-content-center">  
+            <div class="card congratulations_box">
+              <div class="BigStar">     
+                <div class="d-flex justify-content-evenly w-100">
+                      <div class="Star_img">
+                        <img class="orange_star " src="./assets/img/BigOrangeStar.svg"/>                
+                        <img class="BlueStar_img active" src="./assets/img/BlueStar.svg"/>
+                        <h2 class="active congrts_start_no d-flex align-items-center justify-content-around mt-2">1 <small class="Promise_text">Promise</small></h2>
+                      </div>
+        
+                      <div class="Star_img">                
+                        <img class="orange_star" src="./assets/img/BigOrangeStar.svg"/>
+                        <img class="BlueStar_img" src="./assets/img/BlueStar.svg"/>
+                        <h2 class="d-flex congrts_start_no align-items-center justify-content-around mt-2">2 <small class="Promise_text">Promise</small></h2>
+                      </div>
+        
+                      <div class="Star_img">                
+                        <img class="orange_star" src="./assets/img/BigOrangeStar.svg"/>
+                        <img class="BlueStar_img" src="./assets/img/BlueStar.svg"/>
+                        <h2 class=" d-flex congrts_start_no align-items-center justify-content-around mt-2">3 <small class="Promise_text">Promise</small></h2>
+                      </div>
+                  </div>
+              </div>
+                   
+              <div class="card-body pt-5">
+                <div class="hidden">
+                <h5 class="congratulations_text mt-3">Awesome!</h5>
+                <p class="successful_msg px-4">You’ve completed all the MILKYBAR&reg; promise.</p>
+                <!-- <h4 class="text-center">2 MORE TO GO!</h4> -->
+                <div class="text-center"><button class="btn btn-primary btn-rounded ok_btn">Collect your certificate</button></div>
+                </div>
+                <div class="">
+                  <h5 class="congratulations_text mt-3">Yay!</h5>
+                  <p class="successful_msg px-4">You’ve successfully completed one MILKYBAR&reg; promise.</p>
+                  <h4 class="text-center pending_text">2 MORE TO GO!</h4>
+                  <div class="text-center"><button class="btn btn-primary btn-rounded ok_btn">OK</button></div>
+                  </div>
+                  <div class="hidden">
+                    <h5 class="congratulations_text mt-3">YaY!</h5>
+                    <p class="successful_msg px-4">You’ve successfully completed two MILKYBAR&reg; promise.</p>
+                    <h4 class="text-center pending_text">1 MORE TO GO!</h4>
+                    <div class="text-center"><button class="btn btn-primary btn-rounded ok_btn">OK</button></div>
+                  </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- End of congratulations section ////////-->
+        <section class="promise_completed_list hidden">
+  
+          <div class="main-wrapper top_title">
+            <span class="choose_promise h5"><b>Tap on a promise to start</b></span>
+            <small class="promise_subtext"><b>Complete any 3 promises and get a certificate!</b></small>
+            <div class="promise_card_group mt-2 ">
+             
+            <div class="promises row d-flex justify-content-center g-2">
+              <div id="PlayMore" class="promise_card_completed col-5 position-relative">
+                <img src="./assets/img/PlayMore.png" alt="" style="width:90%;">
+                  <div class="promise_card_Done completed col-5 position-absolute" ></div>
+              </div>
+
+              <div id="ReadMore" class="promise_card_completed col-5 position-relative">
+                <img src="./assets/img/ReadMore.png" alt="" style="width:90%;">
+                  <div class="promise_card_Done completed col-5 position-absolute" ></div>
+              </div>
+
+              <div id="SaveWater" class="promise_card_completed col-5 position-relative">
+                <img src="./assets/img/SaveWater.png" alt="" style="width:90%;">
+                  <div class="promise_card_Done completed col-5 position-absolute" ></div>
+              </div>
+
+              <div id="washHands" class="promise_card_completed col-5 position-relative">
+                <img src="./assets/img/washHands.png" alt="" style="width:90%;">
+                  <div class="promise_card_Done completed col-5 position-absolute" ></div>
+              </div>
+
+              <div id="PlantTrees" class="promise_card_completed col-5 position-relative">
+                <img src="./assets/img/PlantTrees.png" alt="" style="width:90%;">
+                  <div class="promise_card_Done completed col-5 position-absolute" ></div>
+              </div>
+
+              <div id="PlantTrees" class="promise_card_completed col-5 position-relative">
+                <img src="./assets/img/PlantTrees.png" alt="" style="width:90%; visibility: hidden;">
+                  <div class="promise_card_Done completed col-5 position-absolute" style="visibility: hidden;"></div>
+              </div>           
+            </div>
+            </div>
+          </div>
+          <div >
+            <img class="bg-img" src="./assets/img/MilkyBar_bg.svg"/>
+          </div>
+        </section>
+        <!-- End of promise completed ////////-->
+        <section class="participant_name hidden"> 
+          <div class="main-wrapper">
+            <div ><h4 class="congrats_text pt-5"><span style="color:#e0007e;">Congrats</span> for completing </h4></div>
+            <div >
+              <img class="Promise_completed_logo" src="./assets/img/PromiseCompleted.png"/>
+            </div>
+            <p class="claimCertificate_text">Claim your certificate now</p>
+          <div class="px-3 input_name" >
+            <input name="certificate_name" id="certificate_name"  type="text" class="form-control input_box mt-5 py-2 px-5" placeholder="Enter the name to be printed"/>
+          </div>
+          <button type="button" id="promise_btn" onClick="display_name()" class="btn btn-primary btn-rounded promise_btn">Next</button>
+          </div>
+          <div>
+            <img class="bg-img" src="./assets/img/MilkyBar_bg.svg"/>
+          </div>
+        </section>
+        <!-- End of participant name /////// -->
+        <section class="certificate_section hidden">
+          <div class="main-wrapper">
+          <div class="Congrats_title">
+            <p class="h3"><b>CONGRATULATIONS</b></p>
+            <p class="Congrats_name h3">ASHISH</p>
+          </div>
+          <p class="collect_certificate"><b>Collect your Certificate</b></p>
+          <div class="certificate_img">
+            <div id="certificateImage">
+              <img id="canvas_img" class="appreciation_certificate" style="display:none;" src="./assets/img/Certificate.svg">
+                              
+              <canvas id="myCanvas" width="300" height="200" style="border:1px solid #d3d3d3;">
+                Your browser does not support the canvas element.
+              </canvas>
+          </div>
+          </div>
+          <button type="button" class="btn btn-primary btn-rounded claim_btn">Claim</button>
+          </div>
+          <div>
+          <img class="bg-img" src="./assets/img/MilkyBar_bg.svg"/>
+          
+        </div>
+        </section>
+        <!-- End of Certificate Page /////// -->
+        <section class="certificate_download_section hidden">
+          <div class="main-wrapper">
+            <p class="download_share_text" class="px-4"><b>Download & share your certificate with family and friends </b></p>
+            <div class="certificate_download_img">
+              <div id="CertificateDownloadImage">
+                <img id="canvas_img_download" class="appreciation_certificate" style="display:none;" src="./assets/img/Certificate.svg"> 
+                <canvas id="myCanvas_download" width="300" height="200" style="border:1px solid #d3d3d3;">
+                  Your browser does not support the canvas element.
+                </canvas>
+            </div>
+            </div>
+            <div class="d-flex justify-content-around download_share_btn">
+              <button type="button" class="btn btn-primary btn-rounded download_btn">Download</button>
+              <button type="button" class="btn btn-primary btn-rounded share_btn">Share</button>
+            </div>
+          </div>
+            <div >
+              <img class="bg-img" src="./assets/img/MilkyBar_bg.svg"/>
+            </div>
+          
+          </section>
+        <!-- End of Certificate download ////// -->
+        <section class="download_completed hidden">             
+          <div class="container">
+          <p class="certificate_download_text mt-5">Certificate downloaded</p>
+          <div class="d-flex justify-content-center pt-5"><img class="download_successful_icon" src="./assets/img/DownloadCompleted_icon.svg"/></div>
+          <div class="d-flex justify-content-center pt-4">
+            <button type="button" class="btn btn-primary btn-rounded exit_btn">Exit</button></div>
+          </div>
+          <div>
+            <img class="bg-img" src="./assets/img/MilkyBar_bg.svg"/>
+          </div>
+        </section>
+        <!-- Download completed page //////// -->
+    </section>
+    <script src="./assets/js/script.js"></script>
+</body>
+</html>
